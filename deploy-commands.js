@@ -26,6 +26,12 @@ const commands = [
 	new SlashCommandBuilder().setName('taginfo').setDescription('Fetch info on a tag!').addStringOption(option => option.setName('name').setDescription('Enter a name')),
 	new SlashCommandBuilder().setName('showtags').setDescription('Show all tags!'),
 	new SlashCommandBuilder().setName('removetag').setDescription('Remove a tag!').addStringOption(option => option.setName('name').setDescription('Enter a name')),
+	new SlashCommandBuilder().setName('balance').setDescription('Check your balance!').addUserOption(option => option.setName('user').setDescription('Enter a user')),
+	new SlashCommandBuilder().setName('inventory').setDescription('Check your balance!').addUserOption(option => option.setName('user').setDescription('Enter a user')),
+	new SlashCommandBuilder().setName('transfer').setDescription('Transfer money').addUserOption(option => option.setName('user').setDescription('Enter a user')).addIntegerOption(option => option.setName('amount').setDescription('Amount to send')),
+	new SlashCommandBuilder().setName('buy').setDescription('Buy items').addStringOption(option => option.setName('item').setDescription('Enter an item')),
+	new SlashCommandBuilder().setName('shop').setDescription('Shop for items'),
+	new SlashCommandBuilder().setName('leaderboard').setDescription('View leaderboards'),
 ]
 	.map(command => command.toJSON());
 
