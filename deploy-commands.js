@@ -7,6 +7,16 @@ const commands = [
 	new SlashCommandBuilder().setName('ping').setDescription('Replies with pong!'),
 	new SlashCommandBuilder().setName('server').setDescription('Replies with server info!'),
 	new SlashCommandBuilder().setName('user').setDescription('Replies with user info!'),
+	new SlashCommandBuilder().setName('react').setDescription('Reacts to interactions!'),
+	new SlashCommandBuilder().setName('react-custom').setDescription('Custom reaction to interactions!'),
+	new SlashCommandBuilder().setName('fruits').setDescription('Custom reaction to interactions!'),
+	new SlashCommandBuilder().setName('fruits-order').setDescription('Custom reaction to interactions!'),
+	new SlashCommandBuilder().setName('reaction').setDescription('Custom reaction to with thumbsUp/thumbsDown!'),
+	new SlashCommandBuilder().setName('collect').setDescription('Custom message collector!'),
+	new SlashCommandBuilder().setName('quiz').setDescription('Trigger a quiz!'),
+	new SlashCommandBuilder().setName('react-collect').setDescription('Collect reacions!'),
+	new SlashCommandBuilder().setName('react-await').setDescription('Collect reacions w/ await!'),
+	new SlashCommandBuilder().setName('button-collect').setDescription('Collect messages!'),
 ]
 	.map(command => command.toJSON());
 
