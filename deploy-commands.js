@@ -21,6 +21,11 @@ const commands = [
 	new SlashCommandBuilder().setName('make-embed').setDescription('Make embed!'),
 	new SlashCommandBuilder().setName('getstring').setDescription('Gets string!').addStringOption(option => option.setName('input').setDescription('Enter a string')),
 	new SlashCommandBuilder().setName('addtag').setDescription('Adds a tag!').addStringOption(option => option.setName('name').setDescription('Enter a name')).addStringOption(option => option.setName('description').setDescription('Enter a description')),
+	new SlashCommandBuilder().setName('edittag').setDescription('Edits a tag!').addStringOption(option => option.setName('name').setDescription('Enter a name')).addStringOption(option => option.setName('description').setDescription('Enter a description')),
+	new SlashCommandBuilder().setName('tag').setDescription('Fetch a tag!').addStringOption(option => option.setName('name').setDescription('Enter a name')),
+	new SlashCommandBuilder().setName('taginfo').setDescription('Fetch info on a tag!').addStringOption(option => option.setName('name').setDescription('Enter a name')),
+	new SlashCommandBuilder().setName('showtags').setDescription('Show all tags!'),
+	new SlashCommandBuilder().setName('removetag').setDescription('Remove a tag!').addStringOption(option => option.setName('name').setDescription('Enter a name')),
 ]
 	.map(command => command.toJSON());
 
