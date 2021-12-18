@@ -4,9 +4,9 @@ const { Routes } = require('discord-api-types/v9');
 const { clientId, guildId, token } = require('./config.json');
 
 const commands = [
-	new SlashCommandBuilder().setName('ping').setDescription('Replies with pong!'),
-	new SlashCommandBuilder().setName('server').setDescription('Replies with server info!'),
-	new SlashCommandBuilder().setName('user').setDescription('Replies with user info!'),
+	// new SlashCommandBuilder().setName('ping').setDescription('Replies with pong!'),
+	// new SlashCommandBuilder().setName('server').setDescription('Replies with server info!'),
+	// new SlashCommandBuilder().setName('user').setDescription('Replies with user info!'),
 	new SlashCommandBuilder().setName('react').setDescription('Reacts to interactions!'),
 	new SlashCommandBuilder().setName('react-custom').setDescription('Custom reaction to interactions!'),
 	new SlashCommandBuilder().setName('fruits').setDescription('Custom reaction to interactions!'),
@@ -17,6 +17,10 @@ const commands = [
 	new SlashCommandBuilder().setName('react-collect').setDescription('Collect reacions!'),
 	new SlashCommandBuilder().setName('react-await').setDescription('Collect reacions w/ await!'),
 	new SlashCommandBuilder().setName('button-collect').setDescription('Collect messages!'),
+	new SlashCommandBuilder().setName('make-thread').setDescription('Make thread!'),
+	new SlashCommandBuilder().setName('make-embed').setDescription('Make embed!'),
+	new SlashCommandBuilder().setName('getstring').setDescription('Gets string!').addStringOption(option => option.setName('input').setDescription('Enter a string')),
+	new SlashCommandBuilder().setName('addtag').setDescription('Adds a tag!').addStringOption(option => option.setName('name').setDescription('Enter a name')).addStringOption(option => option.setName('description').setDescription('Enter a description')),
 ]
 	.map(command => command.toJSON());
 
